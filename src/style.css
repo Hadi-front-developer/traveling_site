@@ -1,0 +1,9 @@
+@font-face {
+     font-family: ali-baba-font;
+     src: url('./../assests/font/ttf/Alibaba-Regular.ttf');
+}
+
+body{
+     font-family: ali-baba-font;
+     
+}
