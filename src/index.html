@@ -2,33 +2,33 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=2.0, maximum-scale=1.0, user-scalable=no, viewport-fit=contain">
   <link href="./output.css" rel="stylesheet">
   <link href="./input.css" rel="stylesheet" >
   <link href="./style.css" rel="stylesheet" >
 
 </head>
 <body class="overflow-hidden">
-    <section class="w-full h-[100vh] bg-blue-400" style="background-image: url('./../assests/img/travel.jpg'); background-size: cover; background-attachment: fixed;">
+<section class="w-full h-[100vh] bg-blue-400" style="background-image: url('./../assests/img/travel.jpg'); background-size: cover; background-attachment: fixed;">
    
-      <nav class="w-full p-4 bg-blue-50  md:flex md:justify-between md:items-center">
+      <nav class="w-full h-20 p-4 bg-[rgb(255,255,255)]  md:flex md:justify-between md:items-center textwhite">
         <div class="w-1/2 h-full flex items-center ">
     
           <div class="flex md:hidden">
-            <span class="block cursor-pointer md:hidden font-bold text-2xl menu p-2 border-sky-500 border rounded-full"  id="toggle-btn" >
+            <!-- <span class="block cursor-pointer md:hidden font-bold text-2xl menu p-2 border-sky-500 border rounded-full"  id="toggle-btn" >
               
               <svg id="menu" class="w-5 sm:w-8 cursor-pointer md:hidden " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             
-            </span>   
+            </span>    -->
       
             <div class="p-2 border-sky-500 border rounded-full mr-3 cursor-pointer" onclick="document.getElementById('login-form').style.display='block'" >
               <img width="20" height="20" src="https://img.icons8.com/ultraviolet/40/gender-neutral-user.png" alt="gender-neutral-user"/>
             </div>
           </div>
     
-          <a href="#" class="cursor-pointer mx-8 ml-14 absolute left-0 md:relative md:right-0">
+          <a href="#" class="cursor-pointer mx-8 md:ml-14 absolute left-0 md:relative md:right-0">
             <img src="../assests/img/logo.svg" alt="">
           </a>
     
@@ -81,14 +81,14 @@
     
             <!-- ul_responsive -->
     
-            <ul class=" gap-y-6 md:h-[80px] z-[1000] md:z-auto absolute right-0 top-[70px]  bg-white w-full  m-auto
-            py-6  pr-6  opacity-0   transition-all ease-in duration-300" id="res-ul">
+            <!-- <ul class=" gap-y-6 md:h-[80px] z-[1000] md:z-auto absolute right-0 top-[70px]  bg-white w-full  m-auto
+            py-6  pr-6  hidden md:hidden  transition-all ease-in duration-300" id="res-ul">
               <li class="hover:border-2 border-green-500 rounded-xl hover:p-3 hover:shadow-lg cursor-pointer  duration-150 mb-4">پرواز داخلی | خارجی</li>
               <li class="hover:border-2 border-green-500 rounded-xl hover:p-3 hover:shadow-lg cursor-pointer duration-150 mb-4">قطار</li>
               <li class="hover:border-2 border-green-500 rounded-xl hover:p-3 hover:shadow-lg cursor-pointer duration-150 mb-4">اتوبوس</li>
               <li class="hover:border-2 border-green-500 rounded-xl hover:p-3 hover:shadow-lg cursor-pointer duration-150 mb-4">هتل</li>
               <li class="hover:border-2 border-green-500 rounded-xl hover:p-3 hover:shadow-lg cursor-pointer duration-150 mb-4">تور</li>  
-            </ul>
+            </ul> -->
             
             <div class="hidden md:block">
               <li class="flex items-center mr-3 "></li>
@@ -103,14 +103,14 @@
           
           <div class="fixed top-0 left-0 z-10 w-full h-full bg-[rgba(0,0,0,0.4)] hidden" id="login-form">
             <div class="flex justify-center items-center h-full w-full md:w-[1250px] m-auto ">
-              <div class="w-[50%]  bg-gradient-to-r from-sky-300 to-indigo-400 shadow-xl rounded-lg p-10 ">
+              <div class="w-full md:w-[50%]  bg-gradient-to-r from-sky-300 to-indigo-400 shadow-xl rounded-lg p-10 ">
                 <img width="30" height="30" class="cursor-pointer" src="https://img.icons8.com/ios-glyphs/30/delete-sign.png" alt="delete-sign" id="close-login" onclick="document.getElementById('login-form').style.display='none'">
                 <h2 class="text-2xl text-center font-bold mb-10 text-white ">ورود یا ثبت نام</h2>
                 <div class="w-4/5 mx-auto">
                   <div class="flex items-center bg-white rounded-full shadow-md mb-4">
                     <span class="px-3">
                       <i class="far fa-envelope text-gray-500 w-4 h-4"></i>
-                    </span>
+                   </span>
                     <input class="w-full h-12 px-4 text-gray-700 focus:outline-none focus:ring-indigo-500 rounded-full" type="email" name="email" placeholder="ایمیل خود را وارد کنید">
                   </div>
                   <div class="flex items-center bg-white rounded-full shadow-md mb-4">
@@ -145,6 +145,45 @@
           </div>
         </div>
       </nav>
+
+      <!-- Home Text -->
+
+      <div class="relative bottom-1 md:top-56 w-full bg-none md:bg-white md:w-[80%] px-3 m-auto rounded-xl md:shadow-3xl ">
+        <div class="w-full p-2 md:p-4 bg-white rounded-b-3xl border-b">
+          <ul class="flex justify-around text-center">
+            <li class=" p-2 rounded-xl"><a href="#"><img src="./../assests/img/plane_home.svg" alt=""  style="filter: drop-shadow(1px 1px 3px #0358f5); margin:0 auto 5px;  " class="w-[30px] md:w-[40px]"><span class="text-sky-500 hidden md:block">پرواز داخلی | خارجی</span> <span class="text-sky-500 block md:hidden">پرواز</span></a></li>
+            <li class=" p-2 rounded-xl"><a href="#"><img src="./../assests/img/train_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px"><span class="text-xs md:text-base ">قطار</span></a></li>
+            <li class=" p-2 rounded-xl"><a href="#"><img src="./../assests/img/bus_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px; width: 30px;"><span class="text-xs md:text-base ">اتوبوس</span></a></li>
+            <li class=" p-2 rounded-xl"><a href="#"><img src="./../assests/img/tour_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px; "><span class="text-xs md:text-base ">تور</span></a></li>
+            <li class=" p-2 rounded-xl"><a href="#"><img src="./../assests/img/hotel_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px;"><span class="text-xs md:text-base ">هتل</span></a></li>
+          </ul>
+        </div>
+
+        <div class="w-full p-4 z-10 mt-10 hidden md:block">
+          <div class="flex items-center gap-x-2">
+            <div class="w-[41%]">
+              <div class="border border-gray-500 flex items-stretch rounded-lg overflow-hidden h-12">
+                <input type="text" placeholder="مبدا" class="h-12 w-1/2 px-2 outline-none border-l">
+                <input type="text" placeholder="مقصد" class="h-12 w-1/2 px-2 outline-none">
+              </div>
+            </div>
+            <div class="w-[20%] border border-gray-500 rounded-lg overflow-hidden h-12 items-center">
+              <input type="text" placeholder="تاریخ رفت" class="h-12 p-2 outline-none ">
+            </div>
+            <div class="w-[20%]  rounded-lg relative bottom-1 ">
+              <fieldset class="border border-gray-500  rounded-md overflow-hidden h-[54px]">
+                <legend class="text-[10px] mr-2">مسافران</legend>
+                <input type="text" placeholder="1 مسافر" class="h-full w-full p-2 outline-none border">
+              </fieldset>
+            </div>
+            <div class="w-[20%] border-3 border-sky-50 bg-sky-800 rounded-lg overflow-hidden h-12 text-white outline outline-2 outline-sky-300">
+              <a href="#" class="w-full h-full flex justify-center items-center ">
+                <h2 >جستجو</h2>
+              </a>
+            </div>
+          </div>  
+        </div>
+
   </section>
 
   <!-- Home Section -->
