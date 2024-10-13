@@ -333,24 +333,158 @@
   <footer class="w-full md:w-[1250px] m-auto mt-10">
     <ul class="flex-col flex md:flex-row justify-around items-center border-y ">
       <li class="flex w-full md:w-1/3 gap-x-3 p-6 md:p-10 border-b">
-        <img class="w-[50px] h-[70px] md:w-[90px]" src="data:image/webp;base64,UklGRoIKAABXRUJQVlA4WAoAAAAQAAAArwAArwAAQUxQSKMDAAABoAVJtmnbGmufa9u2bdu2bdu2bdu2bdu2eXzO3n25Mccc8++9GxETQP/8/z+dQ+aukNWkok30AXA0iTFV+Yg/PkpgRqGn4+/34ppQqstw9lYs82n0Hc5fi244EZbC5UtRDSBmnwNv7i4qF9IdWe7CjeciiVfwBf74cW5Rmysd/OHWkxGESxsIJ19PyWM5EXUz3H00nGz74OKTMVn+lO8p3H8gjGT54Ma7Q9KSrV8QPLk7tGDT3QHg+j14eFtIsbzeuEnBjSGkKgG2q72EWsAHS20ihfzICAssiSqA9SyJVvDCZHnCfmOGseLUAPvh0mzgh0GyRPTTAHqK0hBa7CzJTj2grRzRAjXhaC5GS+jS3lCKg9pAcG0Z4tj1AfvwkBJ0hFa/zS1q094pvQB4PTWvpbVEDu0AeDImi8Z6QdN3hqTR1SVdAbjSJ6mOUkHvpzvH084gzQH2w61j6OWW9gAE7W4USR+ZIKT/plrhNDFaCgDeqyqF0sEjQQB8XljSi1WomCmbQNx3Mwtaitlydh01a9WuU7de+ULq5xNzqlToBYzwwYgMqlQOhjGuTaREuGcwSO/MKtSCUd6LpEA/s0AHBSYYxlYFBhrGEwU6GsY1BRoaxlwFKhpGKQUKmsW7EApkNItZpGBCsyikQkSjeGGpQMEmMYmU/GgSOdV4YBAPSc0LBjFSkQMGkVGRDeIFH53etkaDlpPOXSVFFwj3pFc8+qtNlQmiBYwKR+oPkOxtduLYQbBHKYhlA7m80xDPCnI1IaYFxNpPXDOIVZxNAqkuEdsIUg3hQ0FClWD0QagIjO7LFEyMz8vkzWm/TL4Wo/UyITGj+UKVYzReqEmM+gv1NgSf9kKhBp/6Uj0Ky6a8VBjJJr9Y9hpc0ouFgBJM4suFgK4Wi/CCATvTcqBAyeDYlorBe9GArAzuy3aHGJ6TbQiHfbKl4bBcL47vz68f37759DtVrhDH5rwc355dO7Zt2bRh3ZpVK5YtWXQb/TXjyAdK9GERz1spx9enV49uXTp1SNemVYtmTRrNRp7MOfG555KyoPoesX95cuXIliVThnRpUqVIliRRLVLbKjjrnWfOENM6z52wf358+fDmxZMHd25cuXDmxFEsYu9VatFnD3ThQuGKtujUqFKhTIkiW6TjUJVWebvJHo+NgOFqb/Z3x2Ey2kiNdwe5VM1siChG68N2pw6SCcfrcuZvV5IYEREl7XMFwIuJYcigY+VJTf/8/9+0AFZQOCC4BgAAcCcAnQEqsACwAD5tNJVHP6MroSkS2nvwDYlibsBEEmVB562S9XhPOQtT+F/FvJgnvsAerf87f8b3AP1i6UvmA/ZH9iveW9Df95/Zn3AP75/oOsq/cD2Df2d9N791Pg9/d39vvaV//+sW4AIK8taSBskdVd4FupeJQboF8RKaC6LFnQfkJyGfAszcNwoqqCu6FVpTOIiUfJPV8dh2helycAWaQkNI4WxJ7JxcagFEtZNeTyyNhsDnO0CjUfgiKiXv3pqkqCgpLI0j8XwZ2PBuSeLO+fNfYFn1a44m2uyyzeI9yNRuLugKY6x7OzMAASdEH+deV54HLbLYynO3NRhj8R7vcLZPLCe04hJTnAHzWHAlU45GzxU71BK5Sofz7wk1vh/XhCZjFYHjM+Tt3eySGZCLQaSywmKuhglBUwx9j72broqgAP78+EAAAAOf+mx0glq7Sw9ckyOI+gbrtM3TB4DFAc15nHlR/gCLqqfnwx6vmyi0T41lToK5lLC/QdfO9/+E5g5/8NWWuEyYi2yPf/o/gn+vNnCE58ewoLNmFzSsUtvMZLmSno1UwSe2GyL3/caf2v2XCxlgfoUeAxdOCBE5gYrNjwzabSJMLGLPdgL6Z2d0ioW/Ty2HWyt+JkR2zWCfRMyxj7VbuJ7bqBoohMRHmbMWswjiRafbBqmsmGhAPIo2UOcnUPd5eBTKFb5k2ifwq6PVaHtmCqmzx+qJbEWES6BX7HW27f7RjN3pHGvnN0fz4hHPH3oCqNQqbi3x+wMTZA/zaPr8tUIQH7/UsP//kLP/oWFZn9SIy1VuOJmwhp6AZfPEkH+sIuUBRAomq2OlNA9+dRWETTJQFzss20f9dcnCvUJniDpFVh6LIaIuzoYF9z+sABFqtXlK9GRzIVHCVEbUp/Na4Mf0u/A8KFAKvth49RBOgovsIrxcAQrq093OWqn1LAIX0LW3rhoklQd/3IoCQ2F+SV1BmxDikksI5r4IWZjfMlU534aWPaTwE2UEszz6Jz1WClp+YMmkdT2vkXpXrkW48JSY2W7pLnt0N7Sj5t3Fe0ELuXQ//HMDolVOyYFdcejtO+JlGxH5H5mRzZIVEWmK8aUtV+efHCcP0rapcfP7b1O2rnrQRJQdHgNeBR+8zW35rEQy/smaIRW940sVV4lZbOsgeHJl9nzLWv6HgouOEaY50DkQpzjNaxBCSh6ZCeZSYfqq9vRJYtHJuu/lKOzw3gznmUWflF4SmyWV62m4XFDMOmV6BgLQmfseXXYxzqkWDDg2u5KqgzvzYOg+g+MzBoRxRP8/B5eyT2pH8X34QwP6fEuxR62y+/m/G9weSyfm66RgWZpYwuqiuK2F1EFUL0Tra/pq+lEFKt48jQYYNLyKrUV5oM48cTAnNdv/bSGe3Q7T0JQy3NlAAtJZQuPgW6y+qnPjppZ7G1JsCLkmNug6Vi7HBbyowRfypjBD9SJ05IFDF5AddF5+rx5zrcCDiAABtPooTnOO6+iPhs5oEP2d9L1FA6GR0YSG/TfkmKrbMeXjkRbr9SSKANPgmQQFWbHH97SKxkZ3TTbNtHRxZw4Ofcgf4bRnaPUviQM/9H+g5J+DhTq9u591jM+ZPC3T2CIY6i/nVrnfgCJxzeARszK3vkKjrJclpZuZ6bd3YRygsB4lffN85/MJP44xRXsouUIac346NdwuHcGlwT442aWeVHiHzIEkHQAof/wPFx2CkH/0iCb+l7tgcZFq7Ao62wr/93bVuVMWYAwaAeCxhDtrNvoKq7O1GyqRI/FdTRJL9jKqeKLgv3B2mWv99cNxf8th4UdbrQuZqwBlgl35N854BTfD42wYIOTa+E/UboCxdWdPWz7vLcgh8B6yIL9wrFzq4OL1KMATx+j5yNzFituz9rFZiUzNlLntvBoa6uZxD7MNwlsVSL/UqOtBhJuJzKZM2PyDRqkI6Nwb9cw0zjJI4XjzJLbDfaON/c99uROS+0xplUB166K4VG6CiI99qzZNNdnTlrCcWprez38NGz9oCYJi7aJK07TA74IO+f9KYhObRG/nSQuf03vcnelhZy+oPxz2jKuP/e4RIaUDPfx8ICS98VjCbff0SUy87neITjqBP5ulLLyEPpTOZnKVsMfNHZ28bC9AJOA9rbLj7FxzyQcxx41GfdgoLNwdIOhjH7EwwjQa5K0azpT/kC3P5ZrezHYSSeZpVu5fYVIA+UEJWgvxqJBXMV97Pl0YqdM4RSwAIOY7JCn+4UL0fMu0JjkBgoRgBskyyfwebIs0y7BqVc3IwAAAAAAAAAAAAA==" alt="">
+        <img class="w-[50px] h-[70px] md:w-[90px] md:h-[80px]" src="data:image/webp;base64,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" alt="">
         <div class="flex-col">
           <h3 class="font-bold mb-3 text-lg">رتبه یک سفر</h3>
           <span class="text-gray-600 text-justify text-sm">معتبرترین عرضه‌کننده محصولات گردشگری در ایران</span></div>
       </li>
       <li class="flex w-full md:w-1/3 gap-x-3 p-6 md:p-10 border-b">
-        <img class="w-[50px] h-[70px] md:w-[90px]" src="data:image/webp;base64,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" alt="">
+        <img class="w-[50px] h-[70px] md:w-[90px] md:h-[80px]" src="data:image/webp;base64,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" alt="">
         <div class="flex-col">
           <h3 class="font-bold mb-3 text-lg">رتبه یک سفر</h3>
           <span class="text-gray-600 text-justify text-sm">معتبرترین عرضه‌کننده محصولات گردشگری در ایران</span></div>
       </li>
       <li class="flex w-full md:w-1/3 gap-x-3 p-6 md:p-10 border-b">
-        <img class="w-[50px] h-[70px] md:w-[90px]" src="data:image/webp;base64,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" alt="">
+        <img class="w-[50px] h-[70px] md:w-[90px] md:h-[80px]" src="data:image/webp;base64,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" alt="">
         <div class="flex-col">
           <h3 class="font-bold mb-3 text-lg">رتبه یک سفر</h3>
           <span class="text-gray-600 text-justify text-sm">معتبرترین عرضه‌کننده محصولات گردشگری در ایران</span></div>
       </li>
     </ul>
+
+    <div class="max-w-[1250px] m-auto mt-10 flex-col md:flex-row flex pb-5 border-b-2 border-gray-300">
+
+      <!-- footer R -->
+      <div class="flex items-start justify-evenly w-full md:w-1/2 cursor-pointer">
+
+        <!-- 1 -->
+        <div>
+          <h4 class="text-3 font-bold my-2 ">علی‌بابا</h4>
+          <ul class="list-none mt-4 p-0 ">
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">درباره ما</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">تماس باما</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">چرا علی‌بابا</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">علی بابا پلاس</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">بیمه مسافرتی</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">مجله علی‌بابا</li>
+          </ul>
+        </div>
+
+        <!-- 2 -->
+        <div>
+          <h4 class="text-3 font-bold my-2">خدمات مشتریان</h4>
+          <ul class="list-none mt-4 p-0">
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">مرکز پشتیبانی آنلاین</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">راهنمای خرید</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">راهنمای استرداد</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">قوانین و مقررات</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">پرسش و پاسخ</li>
+          </ul>
+        </div>
+
+        <!-- 3 -->
+        <div>
+          <h4 class="text-3 font-bold my-2">اطلاعات تکمیلی</h4>
+          <ul class="list-none mt-4 p-0">
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">فروش سازمانی</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">همکاری با آژانس‌ها</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">فرصت‌های شغلی</li>
+            <li class="mb-2 hover:text-yellow-500 hover:mr-3 duration-200">سنجش رضایتمندی</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- footer L -->
+      <div class="w-full md:w-1/2 pl-8" dir="ltr">
+
+        <div class="w-[180px] flex m-auto md:m-0">
+          <img src="../../assests/img/alibaba.svg">
+        </div>
+
+        <h1 class="mt-4 text-center md:text-left">تلفن پشتیبانی: ۰۲۱ - ۴۳۹۰۰۰۰۰</h1>
+        <p class="mt-2 text-sm text-center md:text-left">دفتر پشتیبانی: اکباتان، نبش اتوبان لشگری، کوی بیمه، خیابان بیمه چهارم، بن‌بست گل‌ها، پلاک 1</p>
+
+        <ul class="list-none m-0 p-0 flex justify-center md:justify-start gap-x-3" data-v-3d6aae98="">
+          <li class="inline-block" data-v-3d6aae98=""><a class="footer-card p-1"
+              href="https://apinovin.iranianasnaf.ir/parvaneh/1ec0240d-bc2b-4625-86fd-6479f26ddb84/html" data-v-3d6aae98=""><img
+                alt="کسب و کارهای مجازی" data-src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/ecunion-35c3c933.jpg"
+                data-expand="0" class="is-responsive is-animated lazyloaded" height="69" width="69" data-v-3d6aae98=""
+                src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/ecunion-35c3c933.jpg"></a></li>
+          <li class="inline-block" data-v-3d6aae98=""><a class="footer-card p-1"
+              href="https://logo.samandehi.ir/Verify.aspx?id=33643&amp;p=xlaoxlaogvkaaodsxlao" data-v-3d6aae98=""><img
+                alt="logo-samandehi" data-src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/samandehi-6e2b448a.png"
+                data-expand="0" class="is-responsive is-animated lazyloaded" height="69" width="69" data-v-3d6aae98=""
+                src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/samandehi-6e2b448a.png"></a></li>
+          <li class="inline-block" data-v-3d6aae98=""><a class="footer-card p-1"
+              href="https://farasa.cao.ir/sysworkflow/fa/modern/3810212626028ab03488017019616799/6464336316028ab04e3c618028352200.php"
+              data-v-3d6aae98=""><img alt="حقوق مسافر"
+                data-src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/passenger-rights-48368f81.svg" data-expand="0"
+                class="is-responsive is-animated lazyloaded" height="69" width="69" data-v-3d6aae98=""
+                src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/passenger-rights-48368f81.svg"></a></li>
+          <li class="inline-block" data-v-3d6aae98=""><a class="footer-card p-1" href="http://www.aira.ir/"
+              data-v-3d6aae98=""><img alt="دامنه نرخ بلیط شرکت‌های هواپیمایی"
+                data-src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/aira-682b7c43.png" data-expand="0"
+                class="is-responsive is-animated lazyloaded" height="69" width="69" data-v-3d6aae98=""
+                src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/aira-682b7c43.png"></a></li>
+          <li class="inline-block" data-v-3d6aae98=""><a class="footer-card p-1" href="https://caa.gov.ir/"
+              data-v-3d6aae98=""><img alt="سازمان هواپیمایی کشوری"
+                data-src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/state-airline-f45c55b2.svg" data-expand="0"
+                class="is-responsive is-animated lazyloaded" height="69" width="69" data-v-3d6aae98=""
+                src="https://cdn.alibaba.ir/h2/desktop/assets/images/footer/state-airline-f45c55b2.svg"></a></li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="a-container mt-5 max-w-[1250px] m-auto px-10 italic" data-v-3d6aae98="">
+      <div class="flex items-center justify-between"><p class="text-2 text-grays-400"> ARSENAL & HADI FRONT-END </p>
+        <div class="text-center"><!--[--><a href="https://t.me/AlibabaTravels"
+            class="mx-4 text-grays-400 hover:text-blue-600 inline-block align-middle text-center w-5"
+            rel="noopener noreferrer" target="_blank"><svg viewBox="0 0 25 25" width="35" height="35" fill="currentColor"
+              class="block" title="Telegram logo">
+              <path
+                d="m10.282 13.788-.264 3.722c.379 0 .542-.162.74-.358l1.775-1.696 3.679 2.694c.674.376 1.15.178 1.332-.621l2.414-11.315c.215-.998-.36-1.388-1.018-1.143L4.747 10.504c-.969.377-.953.916-.165 1.16l3.63 1.13L16.64 7.52c.397-.263.758-.117.46.145l-6.818 6.123Z">
+              </path>
+            </svg></a><a href="https://www.youtube.com/channel/UChN_55cq3XLPUUv7RRzlNgQ"
+            class="mx-4 text-grays-400 hover:text-blue-600 inline-block align-middle text-center w-5"
+            rel="noopener noreferrer" target="_blank"><svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"
+              class="block" title="youtube logo">
+              <path
+                d="M19.128 6.858c.248.248.427.558.519.897.528 2.127.406 5.487.01 7.696a2.012 2.012 0 0 1-1.416 1.416c-1.241.338-6.239.338-6.239.338s-4.997 0-6.239-.338a2.012 2.012 0 0 1-1.416-1.416c-.531-2.118-.386-5.48-.01-7.686a2.011 2.011 0 0 1 1.416-1.416C6.995 6.01 11.992 6 11.992 6s4.997 0 6.239.339c.339.091.648.27.897.519Zm-4.581 4.745-4.146 2.4v-4.8l4.146 2.4Z"
+                fill-rule="evenodd"></path>
+            </svg></a><a href="https://twitter.com/alibaba_travels"
+            class="mx-4 text-grays-400 hover:text-blue-600 inline-block align-middle text-center w-5"
+            rel="noopener noreferrer" target="_blank"><svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"
+              class="block" title="Twitter logo">
+              <path
+                d="M4.13574 4.70508H8.73476L12.636 9.85653L17.3476 4.71618L19.4669 4.71582L13.5948 11.1225L19.7582 19.2611H15.1592L11.0765 13.87L6.13715 19.2589H4.01794L10.1177 12.604L4.13574 4.70508ZM15.9049 17.7611L7.15332 6.20508H7.98913L16.7407 17.7611H15.9049Z"
+                fill-rule="evenodd"></path>
+            </svg></a><a href="https://www.aparat.com/alibaba_travels"
+            class="mx-4 text-grays-400 hover:text-blue-600 inline-block align-middle text-center w-5"
+            rel="noopener noreferrer" target="_blank"><svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor"
+              class="block" title="Aparat logo">
+              <path
+                d="M28.057 25.12l-.853 3.202a4.955 4.955 0 01-6.06 3.515l-3.02-.814a15.185 15.185 0 009.933-5.904v.001zM16.007 2.127c7.66.004 13.871 6.214 13.871 13.873a13.873 13.873 0 01-16.586 13.604A13.881 13.881 0 012.39 18.703a13.867 13.867 0 015.905-14.24 13.877 13.877 0 017.71-2.335l.002-.001zM.892 18.415a15.172 15.172 0 005.606 9.527l-2.81-.749A4.952 4.952 0 01.17 21.135l.722-2.72zm19.825-.112a3.96 3.96 0 10-1.497 7.779 3.96 3.96 0 001.497-7.779zm-9.943-1.915a3.96 3.96 0 10-1.506 7.775 3.96 3.96 0 001.506-7.775zm5.48-2.02a1.76 1.76 0 10-.656 3.46 1.76 1.76 0 00.657-3.46zm6.482-6.544a3.961 3.961 0 00-1.5 7.778 3.94 3.94 0 002.974-.607 3.96 3.96 0 001.658-4.08 3.96 3.96 0 00-3.132-3.091zm2.43-3.86l3.152.837a4.953 4.953 0 013.522 6.044l-.866 3.277a15.168 15.168 0 00-5.808-10.159v.001zm-12.38 1.945a3.962 3.962 0 10-1.496 7.782 3.962 3.962 0 001.496-7.782zM7.107.673A4.957 4.957 0 0110.868.17l2.946.768a15.176 15.176 0 00-9.746 5.524l.735-2.776A4.953 4.953 0 017.107.673z"
+                fill-rule="evenodd"></path>
+            </svg></a><a href="https://instagram.com/alibaba_travels"
+            class="mx-4 text-grays-400 hover:text-blue-600 inline-block align-middle text-center w-5"
+            rel="noopener noreferrer" target="_blank"><svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor"
+              class="block" title="Instagram logo">
+              <path
+                d="M17.638.001c2.88.005 3.49.028 4.951.095 1.703.078 2.866.348 3.883.743a7.841 7.841 0 012.833 1.845 7.842 7.842 0 011.845 2.833c.395 1.018.666 2.18.743 3.883.072 1.56.093 2.149.096 5.558v2.073c-.003 3.41-.024 3.999-.096 5.558-.077 1.703-.348 2.866-.743 3.883a7.844 7.844 0 01-1.845 2.833 7.842 7.842 0 01-2.833 1.845c-1.017.395-2.18.666-3.883.743-1.56.072-2.148.093-5.558.096h-2.073c-3.41-.003-3.998-.024-5.558-.096-1.702-.077-2.865-.348-3.883-.743a7.841 7.841 0 01-2.833-1.845A7.84 7.84 0 01.84 26.472c-.395-1.017-.665-2.18-.743-3.883-.067-1.462-.09-2.071-.095-4.95V14.35c.005-2.88.028-3.489.095-4.951.078-1.702.348-2.865.743-3.883a7.84 7.84 0 011.845-2.833A7.84 7.84 0 015.517.84C6.535.444 7.697.174 9.4.096c1.462-.067 2.071-.09 4.951-.095h3.287zm-.947 2.88h-1.392l-.323.001h-.596c-2.825.006-3.403.027-4.85.093-1.559.071-2.405.332-2.969.55a4.95 4.95 0 00-1.84 1.197 4.955 4.955 0 00-1.195 1.84c-.22.563-.48 1.41-.551 2.97-.066 1.445-.087 2.023-.092 4.848v.596l-.001.323v2.31c.006 2.825.027 3.403.093 4.849.07 1.56.332 2.406.55 2.97.29.747.638 1.28 1.197 1.84.56.559 1.093.906 1.84 1.196.563.219 1.41.48 2.97.55.385.018.709.032 1.03.044l.241.009c.769.024 1.605.035 3.302.039l.565.001h2.649l.565-.001c1.876-.004 2.7-.017 3.544-.048l.242-.01c.245-.009.499-.02.788-.034 1.56-.07 2.406-.331 2.97-.55a4.956 4.956 0 001.84-1.197 4.96 4.96 0 001.196-1.839c.219-.564.48-1.41.55-2.97.014-.29.025-.544.035-.788l.01-.243c.03-.843.043-1.668.047-3.543l.001-.565v-2.648l-.001-.566c.003-1.1-.01-2.202-.04-3.302l-.008-.241a108.34 108.34 0 00-.044-1.03c-.07-1.56-.331-2.407-.55-2.97a4.957 4.957 0 00-1.197-1.84 4.956 4.956 0 00-1.839-1.196c-.564-.22-1.41-.48-2.97-.551-1.446-.066-2.024-.087-4.849-.092h-.596l-.322-.001v-.001zm-.696 4.9a8.214 8.214 0 11.181 16.426 8.214 8.214 0 01-.181-16.426zm0 2.882a5.331 5.331 0 10-.146 10.662 5.331 5.331 0 00.146-10.662zm8.538-5.126a1.92 1.92 0 11.088 3.84 1.92 1.92 0 01-.088-3.84z"
+                fill-rule="evenodd"></path>
+            </svg></a><a href="https://www.linkedin.com/company/alibaba-travels"
+            class="mx-4 text-grays-400 hover:text-blue-600 inline-block align-middle text-center w-5"
+            rel="noopener noreferrer" target="_blank"><svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor"
+              class="block" title="Linkedin logo">
+              <path
+                d="M25.333 0A6.667 6.667 0 0132 6.667v18.666A6.667 6.667 0 0125.333 32H6.667A6.667 6.667 0 010 25.333V6.667A6.667 6.667 0 016.667 0h18.666zm-8.637 11.13h-4.174v15.305h4.174v-7.797c0-4.331 5.565-4.686 5.565 0v7.797h4.174V17.03c0-7.309-7.797-7.043-9.74-3.445V11.13h.001zm-6.957 0H5.565v15.305H9.74V11.13h-.001zM7.652 4.458a2.445 2.445 0 00-2.435 2.454 2.445 2.445 0 002.435 2.454 2.444 2.444 0 002.435-2.454 2.444 2.444 0 00-2.435-2.454z"
+                fill-rule="evenodd"></path>
+            </svg></a><!--]--></div>
+      </div>
+    </div>
+
   </footer>
 
 
@@ -358,52 +492,6 @@
 
 
 
-
-  <div class="max-w-[1250px] m-auto shadow-lg mt-10 p-5 rounded-md grid grid-cols-12 gap-7">
-    <div class="bg-red-400 h-[250px] rounded-lg col-span-4 shadow overflow-hidden relative">
-      <img src="../img/place/paris.jpg" class="object-cover bg-cover w-full h-full absolute">
-      <div class="absolute text-white bottom-5 right-5" dir="rtl">
-        <h1>پاریس</h1>
-        <p>تور خارجی , یک سفر به یاد ماندنی</p>
-      </div>
-    </div>
-    <div class="bg-red-400 h-[250px] rounded-lg col-span-4 shadow overflow-hidden relative">
-      <img src="../img/place/sydney.jpg" class="object-cover bg-cover w-full h-full absolute">
-      <div class="absolute text-white bottom-5 right-5" dir="rtl">
-        <h1>سیدنی</h1>
-        <p>تور خارجی , یک سفر به یاد ماندنی</p>
-      </div>
-    </div>
-    <div class="bg-red-400 h-[250px] rounded-lg col-span-4 shadow overflow-hidden relative">
-      <img src="../img/place/canada.jpeg" class="object-cover bg-cover w-full h-full absolute">
-      <div class="absolute text-white bottom-5 right-5" dir="rtl">
-        <h1>کانادا</h1>
-        <p>تور خارجی , یک سفر به یاد ماندنی</p>
-      </div>
-    </div>
-    <div class="bg-red-400 h-[250px] rounded-lg col-span-4 shadow overflow-hidden relative">
-      <img src="../img/place/istanbul.jpg" class="object-cover bg-cover w-full h-full absolute">
-      <div class="absolute text-white bottom-5 right-5" dir="rtl">
-        <h1>ایستانبول</h1>
-        <p>تور خارجی , یک سفر به یاد ماندنی</p>
-      </div>
-    </div>
-    <div class="bg-red-400 h-[250px] rounded-lg col-span-4 shadow overflow-hidden relative">
-      <img src="../img/place/tokyo.jpg" class="object-cover bg-cover w-full h-full absolute">
-      <div class="absolute text-white bottom-5 right-5" dir="rtl">
-        <h1>توکیو</h1>
-        <p>تور خارجی , یک سفر به یاد ماندنی</p>
-      </div>
-    </div>
-    <div class="bg-red-400 h-[250px] rounded-lg col-span-4 shadow overflow-hidden relative">
-      <img src="../img/place/seoul.jpg" class="object-cover bg-cover w-full h-full absolute">
-      <div class="absolute text-white bottom-5 right-5" dir="rtl">
-        <h1>سعول</h1>
-        <p>تور خارجی , یک سفر به یاد ماندنی</p>
-      </div>
-    </div>
-  </div>
-  
 
   <script src="./script.js"></script>
 
