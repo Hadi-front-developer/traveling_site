@@ -89,3 +89,11 @@ body{
    .details__desc-inner{
      min-height: 0;
    }
+
+/* bus-page */
+
+.bus-description-ul{
+  ::marker{
+    color:orange;
+  }
+}
