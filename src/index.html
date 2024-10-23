@@ -6,7 +6,9 @@
   <link href="./output.css" rel="stylesheet">
   <link href="./input.css" rel="stylesheet" >
   <link href="./style.css" rel="stylesheet" >
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="overflow-x-hidden">
 <section class="w-full h-[100vh] bg-blue-400" style="background-image: url('./../assests/img/travel.jpg'); background-size: cover; background-attachment: fixed;">
@@ -145,13 +147,14 @@
         <div class="w-full p-2 md:p-4 bg-white rounded-b-3xl border-b">
           <ul class="flex justify-around text-center">
             <li class=" p-2 rounded-xl bg-[#FDB713] "><a href="#"><img src="./../assests/img/plane_home.svg" alt=""  style=" margin:0 auto 5px;  " class="w-[30px] md:w-[40px]"><span class="text-white hidden md:block">پرواز داخلی | خارجی</span> <span class="text-sky-500 block md:hidden">پرواز</span></a></li>
-            <li class=" p-2 rounded-xl"><a href="#"><img src="./../assests/img/train_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px"><span class="text-xs md:text-base ">قطار</span></a></li>
-            <li class=" p-2 rounded-xl"><a href="#"><img src="./../assests/img/bus_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px; width: 30px;"><span class="text-xs md:text-base ">اتوبوس</span></a></li>
-            <li class=" p-2 rounded-xl"><a href="#"><img src="./../assests/img/tour_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px; "><span class="text-xs md:text-base ">تور</span></a></li>
+            <li class=" p-2 rounded-xl"><a href="../src/pages/train.html"><img src="./../assests/img/train_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px"><span class="text-xs md:text-base ">قطار</span></a></li>
+            <li class=" p-2 rounded-xl"><a href="../src/pages/bus.html"><img src="./../assests/img/bus_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px; width: 30px;"><span class="text-xs md:text-base ">اتوبوس</span></a></li>
+            <li class=" p-2 rounded-xl"><a href="../src/pages/tour.html"><img src="./../assests/img/tour_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px; "><span class="text-xs md:text-base ">تور</span></a></li>
             <li class=" p-2 rounded-xl"><a href="./pages/Hotel.html"><img src="./../assests/img/hotel_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px;"><span class="text-xs md:text-base ">هتل</span></a></li>
           </ul>
         </div>
 
+        <!-- default -->
         <div class="w-full p-4 z-10 mt-10 hidden md:block">
           <div class="flex items-center gap-x-2">
             <div class="w-[41%]">
@@ -171,10 +174,69 @@
             </div>
             <div class="w-[20%] bg-[#FDB713] rounded-lg overflow-hidden h-12">
               <a href="#" class="w-full h-full flex justify-center items-center ">
-                <h2 >جستجو</h2>
+                <h2>جستجو</h2>
               </a>
             </div>
-          </div>  
+          </div>
+        </div>
+
+        <!-- responsive -->
+        <div class="w-[400px] p-4 z-10 mt-14 md:hidden bg-white rounded-lg mx-auto">
+
+          <h1 class="text-center text-2xl">بلیط پرواز</h1>
+
+          <div class="flex justify-evenly items-center w-[300px] mx-auto mt-4 h-[40px] rounded-2xl border-[1px] border-gray-500 overflow-hidden">
+
+            <button class="bg-sky-500 w-1/2 h-full">داخلی</button>      
+            <button class="w-1/2 h-full">خارجی</button>      
+            
+          </div>
+
+          <div class="flex justify-evenly items-center w-[300px] mx-auto mt-4 h-[40px]">
+          
+            <button class="border-b-2 border-sky-500 w-1/2 h-full">یک طرفه</button>
+            <button class="w-1/2 h-full">رفت و برگشت</button>
+          
+          </div>
+          
+
+
+
+          <div class="flex flex-col items-center gap-x-2 mt-4">
+
+            <div class="w-full border-[1px] border-gray-500 rounded-lg">
+
+              <div class="w-full rounded-lg overflow-hidden h-12 border-b items-center">
+                <i class="fa-solid fa-location-dot px-2 border-l"></i>
+                <input type="text" placeholder="مبدا" class="h-12 p-2 outline-none ">
+              </div>
+              <div class="w-full rounded-lg overflow-hidden h-12 items-center">
+                <i class="fa-solid fa-location-dot px-2 border-l"></i>
+                <input type="text" placeholder="مقصد" class="h-12 p-2 outline-none ">
+              </div>
+                
+            </div>
+
+            <div class="w-full border border-gray-500 rounded-lg overflow-hidden h-12 items-center mt-5 selection:border-sky-500">
+              <i class="fa-solid fa-calendar-days px-2 border-l"></i>
+              <input type="text" placeholder="تاریخ رفت" class="h-12 p-2 outline-none">
+            </div>
+
+
+
+            <div class="w-full mt-5 rounded-lg relative bottom-1">
+              <fieldset class="border border-gray-500  rounded-md overflow-hidden h-[54px]">
+                <legend class="text-[10px] mr-2">مسافران</legend>
+                <input type="text" placeholder="1 مسافر" class="h-full w-full p-2 outline-none border">
+              </fieldset>
+            </div>
+            <div class="w-[30%] mt-5 bg-[#FDB713] rounded-lg overflow-hidden h-12">
+              <a href="#" class="w-full h-full flex justify-center items-center ">
+                <h2>جستجو</h2>
+              </a>
+            </div>
+          </div>
+
         </div>
 
   </section>
@@ -329,7 +391,7 @@
 
   <!-- Footer Section -->
 
-  <footer class="w-full md:w-[1250px] m-auto mt-10">
+  <footer class="w-full md:w-[1250px] m-auto mt-10 pb-5">
     <ul class="flex-col flex md:flex-row justify-around items-center border-y ">
       <li class="flex w-full md:w-1/3 gap-x-3 p-6 md:p-10 border-b">
         <img class="w-[50px] h-[70px] md:w-[90px] md:h-[80px]" src="data:image/webp;base64,UklGRoIKAABXRUJQVlA4WAoAAAAQAAAArwAArwAAQUxQSKMDAAABoAVJtmnbGmufa9u2bdu2bdu2bdu2bdu2eXzO3n25Mccc8++9GxETQP/8/z+dQ+aukNWkok30AXA0iTFV+Yg/PkpgRqGn4+/34ppQqstw9lYs82n0Hc5fi244EZbC5UtRDSBmnwNv7i4qF9IdWe7CjeciiVfwBf74cW5Rmysd/OHWkxGESxsIJ19PyWM5EXUz3H00nGz74OKTMVn+lO8p3H8gjGT54Ma7Q9KSrV8QPLk7tGDT3QHg+j14eFtIsbzeuEnBjSGkKgG2q72EWsAHS20ihfzICAssiSqA9SyJVvDCZHnCfmOGseLUAPvh0mzgh0GyRPTTAHqK0hBa7CzJTj2grRzRAjXhaC5GS+jS3lCKg9pAcG0Z4tj1AfvwkBJ0hFa/zS1q094pvQB4PTWvpbVEDu0AeDImi8Z6QdN3hqTR1SVdAbjSJ6mOUkHvpzvH084gzQH2w61j6OWW9gAE7W4USR+ZIKT/plrhNDFaCgDeqyqF0sEjQQB8XljSi1WomCmbQNx3Mwtaitlydh01a9WuU7de+ULq5xNzqlToBYzwwYgMqlQOhjGuTaREuGcwSO/MKtSCUd6LpEA/s0AHBSYYxlYFBhrGEwU6GsY1BRoaxlwFKhpGKQUKmsW7EApkNItZpGBCsyikQkSjeGGpQMEmMYmU/GgSOdV4YBAPSc0LBjFSkQMGkVGRDeIFH53etkaDlpPOXSVFFwj3pFc8+qtNlQmiBYwKR+oPkOxtduLYQbBHKYhlA7m80xDPCnI1IaYFxNpPXDOIVZxNAqkuEdsIUg3hQ0FClWD0QagIjO7LFEyMz8vkzWm/TL4Wo/UyITGj+UKVYzReqEmM+gv1NgSf9kKhBp/6Uj0Ky6a8VBjJJr9Y9hpc0ouFgBJM4suFgK4Wi/CCATvTcqBAyeDYlorBe9GArAzuy3aHGJ6TbQiHfbKl4bBcL47vz68f37759DtVrhDH5rwc355dO7Zt2bRh3ZpVK5YtWXQb/TXjyAdK9GERz1spx9enV49uXTp1SNemVYtmTRrNRp7MOfG555KyoPoesX95cuXIliVThnRpUqVIliRRLVLbKjjrnWfOENM6z52wf358+fDmxZMHd25cuXDmxFEsYu9VatFnD3ThQuGKtujUqFKhTIkiW6TjUJVWebvJHo+NgOFqb/Z3x2Ey2kiNdwe5VM1siChG68N2pw6SCcfrcuZvV5IYEREl7XMFwIuJYcigY+VJTf/8/9+0AFZQOCC4BgAAcCcAnQEqsACwAD5tNJVHP6MroSkS2nvwDYlibsBEEmVB562S9XhPOQtT+F/FvJgnvsAerf87f8b3AP1i6UvmA/ZH9iveW9Df95/Zn3AP75/oOsq/cD2Df2d9N791Pg9/d39vvaV//+sW4AIK8taSBskdVd4FupeJQboF8RKaC6LFnQfkJyGfAszcNwoqqCu6FVpTOIiUfJPV8dh2helycAWaQkNI4WxJ7JxcagFEtZNeTyyNhsDnO0CjUfgiKiXv3pqkqCgpLI0j8XwZ2PBuSeLO+fNfYFn1a44m2uyyzeI9yNRuLugKY6x7OzMAASdEH+deV54HLbLYynO3NRhj8R7vcLZPLCe04hJTnAHzWHAlU45GzxU71BK5Sofz7wk1vh/XhCZjFYHjM+Tt3eySGZCLQaSywmKuhglBUwx9j72broqgAP78+EAAAAOf+mx0glq7Sw9ckyOI+gbrtM3TB4DFAc15nHlR/gCLqqfnwx6vmyi0T41lToK5lLC/QdfO9/+E5g5/8NWWuEyYi2yPf/o/gn+vNnCE58ewoLNmFzSsUtvMZLmSno1UwSe2GyL3/caf2v2XCxlgfoUeAxdOCBE5gYrNjwzabSJMLGLPdgL6Z2d0ioW/Ty2HWyt+JkR2zWCfRMyxj7VbuJ7bqBoohMRHmbMWswjiRafbBqmsmGhAPIo2UOcnUPd5eBTKFb5k2ifwq6PVaHtmCqmzx+qJbEWES6BX7HW27f7RjN3pHGvnN0fz4hHPH3oCqNQqbi3x+wMTZA/zaPr8tUIQH7/UsP//kLP/oWFZn9SIy1VuOJmwhp6AZfPEkH+sIuUBRAomq2OlNA9+dRWETTJQFzss20f9dcnCvUJniDpFVh6LIaIuzoYF9z+sABFqtXlK9GRzIVHCVEbUp/Na4Mf0u/A8KFAKvth49RBOgovsIrxcAQrq093OWqn1LAIX0LW3rhoklQd/3IoCQ2F+SV1BmxDikksI5r4IWZjfMlU534aWPaTwE2UEszz6Jz1WClp+YMmkdT2vkXpXrkW48JSY2W7pLnt0N7Sj5t3Fe0ELuXQ//HMDolVOyYFdcejtO+JlGxH5H5mRzZIVEWmK8aUtV+efHCcP0rapcfP7b1O2rnrQRJQdHgNeBR+8zW35rEQy/smaIRW940sVV4lZbOsgeHJl9nzLWv6HgouOEaY50DkQpzjNaxBCSh6ZCeZSYfqq9vRJYtHJuu/lKOzw3gznmUWflF4SmyWV62m4XFDMOmV6BgLQmfseXXYxzqkWDDg2u5KqgzvzYOg+g+MzBoRxRP8/B5eyT2pH8X34QwP6fEuxR62y+/m/G9weSyfm66RgWZpYwuqiuK2F1EFUL0Tra/pq+lEFKt48jQYYNLyKrUV5oM48cTAnNdv/bSGe3Q7T0JQy3NlAAtJZQuPgW6y+qnPjppZ7G1JsCLkmNug6Vi7HBbyowRfypjBD9SJ05IFDF5AddF5+rx5zrcCDiAABtPooTnOO6+iPhs5oEP2d9L1FA6GR0YSG/TfkmKrbMeXjkRbr9SSKANPgmQQFWbHH97SKxkZ3TTbNtHRxZw4Ofcgf4bRnaPUviQM/9H+g5J+DhTq9u591jM+ZPC3T2CIY6i/nVrnfgCJxzeARszK3vkKjrJclpZuZ6bd3YRygsB4lffN85/MJP44xRXsouUIac346NdwuHcGlwT442aWeVHiHzIEkHQAof/wPFx2CkH/0iCb+l7tgcZFq7Ao62wr/93bVuVMWYAwaAeCxhDtrNvoKq7O1GyqRI/FdTRJL9jKqeKLgv3B2mWv99cNxf8th4UdbrQuZqwBlgl35N854BTfD42wYIOTa+E/UboCxdWdPWz7vLcgh8B6yIL9wrFzq4OL1KMATx+j5yNzFituz9rFZiUzNlLntvBoa6uZxD7MNwlsVSL/UqOtBhJuJzKZM2PyDRqkI6Nwb9cw0zjJI4XjzJLbDfaON/c99uROS+0xplUB166K4VG6CiI99qzZNNdnTlrCcWprez38NGz9oCYJi7aJK07TA74IO+f9KYhObRG/nSQuf03vcnelhZy+oPxz2jKuP/e4RIaUDPfx8ICS98VjCbff0SUy87neITjqBP5ulLLyEPpTOZnKVsMfNHZ28bC9AJOA9rbLj7FxzyQcxx41GfdgoLNwdIOhjH7EwwjQa5K0azpT/kC3P5ZrezHYSSeZpVu5fYVIA+UEJWgvxqJBXMV97Pl0YqdM4RSwAIOY7JCn+4UL0fMu0JjkBgoRgBskyyfwebIs0y7BqVc3IwAAAAAAAAAAAAA==" alt="">

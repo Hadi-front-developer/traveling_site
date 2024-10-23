@@ -137,13 +137,14 @@
             <div class="w-full p-2 md:p-4 bg-white rounded-b-3xl border-b">
               <ul class="flex justify-around text-center">
                 <li class=" p-2 rounded-xl "><a href="../index.html"><img src="./../../assests/img/plane_home.svg" alt=""  style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px;  " class=" w-[30px] md:w-[40px]"><span class=" hidden md:block">پرواز داخلی | خارجی</span> <span class="text-sky-500 block md:hidden">پرواز</span></a></li>
-                <li class=" p-2 rounded-xl"><a href="#"><img src="./../../assests/img/train_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px"><span class="text-xs md:text-base ">قطار</span></a></li>
+                <li class=" p-2 rounded-xl"><a href="./train.html"><img src="./../../assests/img/train_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px"><span class="text-xs md:text-base ">قطار</span></a></li>
                 <li class=" p-4 rounded-xl bg-[#FDB713] "><a href="./bus.html"><img src="./../../assests/img/bus_home.svg" alt="" style=" margin:0 auto 5px; width: 30px;"><span class="text-xs md:text-base text-white">اتوبوس</span></a></li>
                 <li class=" p-2 rounded-xl"><a href="./tour.html"><img src="./../../assests/img/tour_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px; "><span class="text-xs md:text-base ">تور</span></a></li>
                 <li class=" p-2 rounded-xl"><a href="./Hotel.html"><img src="./../../assests/img/hotel_home.svg" alt="" style="filter: drop-shadow(1px 1px 3px #0684fa); margin:0 auto 5px;"><span class="text-xs md:text-base ">هتل</span></a></li>
               </ul>
             </div>
     
+            <!-- default -->
             <div class="w-full p-4 z-10 mt-10 hidden md:block">
               <div class="flex items-center gap-x-2">
                 <div class="w-[41%]">
@@ -167,6 +168,67 @@
                   </a>
                 </div>
               </div>  
+            </div>
+
+            <!-- responsive -->
+            <div class="w-[400px] p-4 z-10 mt-14 md:hidden bg-white rounded-lg mx-auto">
+            
+              <h1 class="text-center text-2xl">بلیط اتوبوس</h1>
+            
+              <div
+                class="flex justify-evenly items-center w-[300px] mx-auto mt-4 h-[40px] rounded-2xl border-[1px] border-gray-500 overflow-hidden">
+            
+                <button class="bg-sky-500 w-1/2 h-full">داخلی</button>
+                <button class="w-1/2 h-full">خارجی</button>
+            
+              </div>
+            
+              <div class="flex justify-evenly items-center w-[300px] mx-auto mt-4 h-[40px]">
+            
+                <button class="border-b-2 border-sky-500 w-1/2 h-full">یک طرفه</button>
+                <button class="w-1/2 h-full">رفت و برگشت</button>
+            
+              </div>
+            
+            
+            
+            
+              <div class="flex flex-col items-center gap-x-2 mt-4">
+            
+                <div class="w-full border-[1px] border-gray-500 rounded-lg">
+            
+                  <div class="w-full rounded-lg overflow-hidden h-12 border-b items-center">
+                    <i class="fa-solid fa-location-dot px-2 border-l"></i>
+                    <input type="text" placeholder="مبدا" class="h-12 p-2 outline-none ">
+                  </div>
+                  <div class="w-full rounded-lg overflow-hidden h-12 items-center">
+                    <i class="fa-solid fa-location-dot px-2 border-l"></i>
+                    <input type="text" placeholder="مقصد" class="h-12 p-2 outline-none ">
+                  </div>
+            
+                </div>
+            
+                <div
+                  class="w-full border border-gray-500 rounded-lg overflow-hidden h-12 items-center mt-5 selection:border-sky-500">
+                  <i class="fa-solid fa-calendar-days px-2 border-l"></i>
+                  <input type="text" placeholder="تاریخ رفت" class="h-12 p-2 outline-none">
+                </div>
+            
+            
+            
+                <div class="w-full mt-5 rounded-lg relative bottom-1">
+                  <fieldset class="border border-gray-500  rounded-md overflow-hidden h-[54px]">
+                    <legend class="text-[10px] mr-2">مسافران</legend>
+                    <input type="text" placeholder="1 مسافر" class="h-full w-full p-2 outline-none border">
+                  </fieldset>
+                </div>
+                <div class="w-[30%] mt-5 bg-[#FDB713] rounded-lg overflow-hidden h-12">
+                  <a href="#" class="w-full h-full flex justify-center items-center ">
+                    <h2>جستجو</h2>
+                  </a>
+                </div>
+              </div>
+            
             </div>
     
       </section>
